@@ -18,6 +18,7 @@ console.log(release)
 console.log(image)
 console.log(description)
 
+//shows the title, release, image and description on the page
 document.querySelector(`h1`).innerText = title
 document.querySelector('h2').innerText = release
 let pic = document.querySelector(`img`)
