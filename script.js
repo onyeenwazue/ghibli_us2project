@@ -20,8 +20,8 @@ console.log(description)
 
 document.querySelector(`h1`).innerText = title
 document.querySelector('h2').innerText = release
-let pic = document.createElement(`img`)
-pic.src = image
+let pic = document.querySelector(`img`)
+pic.src = `${image}`
 document.querySelector(`h3`).innerText = description
 
 
