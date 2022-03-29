@@ -13,24 +13,11 @@ let title = i.title
 let release = i.release_date
 let image = i.image
 let description = i.description
-console.log(title)
-console.log(release)
-console.log(image)
-console.log(description)
 
 //shows the title, release, image and description on the page
 document.querySelector(`h1`).innerText = title
 document.querySelector('h2').innerText = release
 let pic = document.querySelector(`img`)
 pic.src = `${image}`
-document.querySelector(`h3`).innerText = description
-
-
-// let info = document.createElement(`h1`)
-// let container = document.querySelector(`.title`)
-// container.appendChild(info)
-//create an element and save it to the variable
-//chnage the innerText to be desired value
-//append created element to the page
+document.querySelector(`p`).innerText = description
 })
-
