@@ -1,5 +1,9 @@
 const button = document.querySelector('button')
 const list = document.querySelector('ul')
+const btn = document.getElementById('toggle')
+const background = () => {
+  document.body.append('This is my Favorite Recommendation')
+}
 
 
 // Clicking on the button will generate a random Ghibli movie and show the Title, Description and Image
@@ -21,3 +25,7 @@ let pic = document.querySelector(`img`)
 pic.src = `${image}`
 document.querySelector(`p`).innerText = description
 })
+
+//eventListener to change page background
+const error = btn.addEventListener('click', background)
+console.log(error)
